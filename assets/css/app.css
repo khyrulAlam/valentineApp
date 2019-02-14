@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Ubuntu+Condensed|Ubuntu:400,500,700');
+body{
+  margin: 0 auto;
+  width: 100%;
+  background-image: url('../img/app_bg.jpg')
+}
+#app{
+  width: 100wh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/app_bg.jpg');
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.wrapper{
+  position: relative;
+}
+.__askText{
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  font-size: 75px;
+  font-weight: 600;
+  padding: 15px 0px;
+}
+#yesBtn, #noBtn {
+  font-family: 'Lobster', cursive;
+  width: 250px;
+  height: 100px;
+  font-size: 60px;
+  border: none;
+  border-radius: 6px;
+  background: #efc3d8;
+  color: #f03958;
+  margin-top: 30px;
+}
+canvas {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#yesBtn:active, #noBtn:active{
+  outline: none;
+  color: #fff;
+}
+#yesBtn:focus, #noBtn:focus{
+  outline: none;
+  color: #fff;
+}
+.__result{
+  font-family: 'Lobster', cursive;
+  position: absolute;
+  background: #000000b3;
+  width: 100%;
+  height: 100%;
+  z-index: -111;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 100px;
+  color: #fff;
+  opacity: 0;
+}
+.__counter__show{
+  font-family: 'Lobster', cursive;
+  font-size: 70px;
+  color: #FFEB3B;
+  font-weight: 800;
+}
+.intoSection{
+  background: url('../../assets/img/bg-start.jpg');
+  background-size: cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  display: block;
+}
+.intoSection h3{
+  margin-top: 200px;
+  font-weight: 400;
+  font-size: 40px;
+  color: #fff;
+}
+.intoSection button{
+  padding: 15px 60px;
+  background: #fd4157;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+.intoSection h3 span{
+  font-weight: 800;
+  color: red;
+  font-size: 60px;
+}
